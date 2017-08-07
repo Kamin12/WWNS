@@ -1,0 +1,7 @@
+<template name="ImageFeed">
+       <div id="images_feed_bg">
+           {{#each image in images}}
+               {{>ImageItem image=image}}
+           {{/each}}
+       </div>
+</template>

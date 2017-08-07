@@ -1,0 +1,15 @@
+<template name="StreamProductMain">
+<a id="canEdit"> EDIT </a>
+{{#each productTitle in productTitleArray}}
+ {{> StreamProduct1 (productArgs productTitle) }}
+{{else}}
+ {{> Member_notFound}}
+{{/each}}
+</template>
+
+
+<template name="Member_notFound">
+<div>
+No member has been found with the name of. Click to create that.
+</div>
+</template>

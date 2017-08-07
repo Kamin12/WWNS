@@ -1,0 +1,7 @@
+<template name="Sidebar">
+<ul id="recentmess">
+{{#each message in messages}}
+{{>SideMessage message=message}}
+{{/each}}
+</ul>
+</template>

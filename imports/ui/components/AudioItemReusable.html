@@ -1,0 +1,13 @@
+<template name="AudioItem">
+    <div id="image_div">
+          <p class="normal" style="float:left;"> {{audio.Date}}</p>
+          <p class="normal" style="float:left;"> {{audio.Location}}</p>
+          <p class="tag" style="float:right;">{{audio.Tags}}</p>
+        <div class="music_info_image">{{audio.Image}}</div>
+        <div class="like_button_dark" style="margin-left:30%;"><p class="music_info_buttons_text"> LIKE </p></div>
+        <div class="save_button_dark"><p class="music_info_buttons_text"> SAVE </p></div>
+        <div class="share_button_dark"><p class="music_info_buttons_text"> SHARE </p></div>
+        <div class="song_title" style="float:left;"><p>{{audio.Title}}</p></div>
+        <div class="creator_name" colspan="4"><p>{{audio.CreatorsImage}}</p> </div>
+      </div>
+</template>

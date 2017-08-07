@@ -1,0 +1,23 @@
+<template name="YourMessages">
+<div id='messageswhole'>
+<span class="close3"> X </span>
+<a id='messageslabel'> MY MESSAGES </a>
+<div id="conversation" class="conversationn" name="conversation">
+</div>
+{>Sidebar}}
+{{#if currentUser}}
+{{>YourMessagesRU}}
+{{else}}
+<div class="modal4" id="messagesModalll">
+<div class="master-navbartwo1"></div>
+<div class="master-navbarthree1"></div>
+<div class="master-navbar"></div>
+<div class="modal35" id="messagesModal">
+<a id="calltojoin"> Login is Required to Message Members. </a>
+<a id="calltosignup" href="/sign-up"> SIGN UP </a>
+<a id='calltologin' href="/sign-in">SIGN IN </a>
+</div>
+</div>
+{{/if}}
+</div>
+</template>

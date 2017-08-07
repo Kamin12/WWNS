@@ -1,0 +1,5 @@
+<template name="StreamAudio">
+    {{#each audioTitle in audioContext}}
+    {{>StreamAudioResuable (audioArgs audioTitle)}}
+    {{/each}}
+</template>
